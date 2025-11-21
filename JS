@@ -1,0 +1,23 @@
+// emailValidator.js
+
+/**
+ * Checks if a given string is a valid email address format using a simple regex.
+ * @param {string} email - The string to validate.
+ * @returns {boolean} - True if the format is valid, false otherwise.
+ */
+function isValidEmail(email) {
+    // A common, simple regex pattern for email validation:
+    // Starts with one or more word characters/dots/hyphens,
+    // followed by an '@', then one or more word characters/dots/hyphens,
+    // and ends with a dot followed by 2 or more letters.
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    return emailRegex.test(email);
+}
+
+// Example usage:
+const email1 = "test.user@example.com";
+const email2 = "invalid-email.com";
+
+console.log(`'${email1}' is valid: ${isValidEmail(email1)}`); // Should output: true
+console.log(`'${email2}' is valid: ${isValidEmail(email2)}`); // Should output: false
