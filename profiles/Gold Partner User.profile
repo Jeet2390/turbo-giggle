@@ -158,6 +158,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>A00020</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Apex001</apexClass>
         <enabled>false</enabled>
     </classAccesses>
